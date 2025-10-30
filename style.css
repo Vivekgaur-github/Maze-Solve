@@ -1,0 +1,71 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle, #a29bfe, #6c5ce7);
+  text-align: center;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  margin-top: 15px;
+}
+
+.controls {
+  margin: 10px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #0984e3;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #74b9ff;
+}
+
+#maze {
+  display: grid;
+  grid-template-columns: repeat(20, 30px);
+  grid-template-rows: repeat(20, 30px);
+  gap: 2px;
+  margin-top: 15px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.wall {
+  background: #2d3436;
+}
+
+.start {
+  background: #00b894;
+}
+
+.end {
+  background: #d63031;
+}
+
+.visited {
+  background: #74b9ff;
+}
+
+.path {
+  background: #fdcb6e;
+}
